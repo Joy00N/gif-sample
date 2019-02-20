@@ -21,6 +21,11 @@ public class Shipwreck {
     public Shipwreck() {
     }
 
+    public Shipwreck(Long id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public Shipwreck(Long id, String name, String description, String condition, Integer depth, Double latitude, Double longitude, Integer yearDiscovered) {
         this.id = id;
         this.name = name;

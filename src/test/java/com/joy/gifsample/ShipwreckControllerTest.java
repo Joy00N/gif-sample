@@ -30,8 +30,7 @@ public class ShipwreckControllerTest {
 
     @Test
     public void testShipwreckGet() {
-        Shipwreck shipwreck = new Shipwreck();
-        shipwreck.setId(1L);
+        Shipwreck shipwreck = new Shipwreck(1L, "Test");
 
         when(repository.findById(1L)).thenReturn(Optional.of(shipwreck));
         Shipwreck wreck = repository.findById(1L).get();
