@@ -2,6 +2,7 @@ package com.joy.gifsample;
 
 import com.joy.gifsample.model.Shipwreck;
 import com.joy.gifsample.repository.ShipwreckRepository;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,12 @@ public class ShipwreckRepositoryIntegrationTest {
 
     @Autowired
     private ShipwreckRepository repository;
+
+    @Before
+    public void init() {
+        Shipwreck shipwreck = new Shipwreck(123L, "Yoon");
+        repository.saveAndFlush(shipwreck);
+    }
 
     @Test
     public void testFindAll(){
