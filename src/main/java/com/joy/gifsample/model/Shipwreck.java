@@ -18,6 +18,9 @@ public class Shipwreck {
     Double longitude;
     Integer yearDiscovered;
 
+    public Shipwreck() {
+    }
+
     public Shipwreck(Long id, String name) {
         this.id = id;
         this.name = name;

@@ -1,4 +1,4 @@
-package com.joy.gifsample.jbehave;
+package com.joy.gifsample;
 
 import com.joy.gifsample.model.Person;
 import com.joy.gifsample.model.Shipwreck;

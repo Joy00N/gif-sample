@@ -1,4 +1,4 @@
-package com.joy.gifsample.jbehave;
+package com.joy.gifsample;
 
 import org.jbehave.core.configuration.Configuration;
 import org.jbehave.core.configuration.MostUsefulConfiguration;
